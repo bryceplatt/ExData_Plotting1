@@ -16,7 +16,7 @@ png('plot4.png',width = 480, height = 480, units = "px")
 
 # Create the plot
 par(mfcol = c(2,2))
-plot(d$dateTime,d$Global_active_power,type="l",ylab="Global Active Power (kilowats)",xlab="")
+plot(d$dateTime,d$Global_active_power,type="l",ylab="Global Active Power",xlab="")
 plot(d$dateTime,d$Sub_metering_1,type="l",ylab="Energy sub metering",col="black",xlab="")
 lines(d$dateTime,d$Sub_metering_2,type="l",col="red")
 lines(d$dateTime,d$Sub_metering_3,type="l",col="blue")
